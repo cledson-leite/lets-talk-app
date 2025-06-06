@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import MobileNav from './MobileNav'
+import { SignedIn, SignInButton, UserButton } from '@clerk/nextjs'
 
 export default function NavBar() {
   return (
@@ -16,7 +16,12 @@ export default function NavBar() {
         />
         <p className='text-[26px] font-extrabold max-sm:hidden'>Let's Talk</p>
       </Link>
-      <MobileNav />
+      <div className='flex-between gap-5'>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <MobileNav />
+      </div>
     </nav>
   )
 }
