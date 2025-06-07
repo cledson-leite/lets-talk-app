@@ -41,15 +41,27 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --text-sky-1: var(--sky-1);
+  --bg-dark-1: var(--dark-1);
+  --bg-dark-2: var(--dark-2);
+  --bg-dark-3: var(--dark-3);
+  --bg-dark-4: var(--dark-4);
 }
 
 :root {
   --dark-1: #1c1f2e;
   --dark-2: #161925;
+  --dark-3: #252a41;
+  --dark-4: #1e2757;
   --blue-1: #0e78f9;
+  --sky-1: #C9DDFF;
+  --sky-2: #ecf0ff;
+  --sky-3: #f5fcff;
+  --orage-1: #ff742e;
+  --purple-1: #830ef9;
+  --yellow-1: #f9a90e;
 
-  /* --background: oklch(0.129 0.042 264.695); */
-  --background: var(--dark-2);
+  --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.208 0.042 265.755);
   --card-foreground: oklch(0.984 0.003 247.858);
@@ -85,10 +97,17 @@
 .dark {
   --dark-1: #1c1f2e;
   --dark-2: #161925;
+  --dark-3: #252a41;
+  --dark-4: #1e2757;
   --blue-1: #0e78f9;
+  --sky-1: #C9DDFF;
+  --sky-2: #ecf0ff;
+  --sky-3: #f5fcff;
+  --orage-1: #ff742e;
+  --purple-1: #830ef9;
+  --yellow-1: #f9a90e;
 
-  /* --background: oklch(0.129 0.042 264.695); */
-  --background: var(--dark-2);
+  --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.208 0.042 265.755);
   --card-foreground: oklch(0.984 0.003 247.858);
@@ -121,6 +140,16 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
 
 /* ==== clerk class override ===== */
 
@@ -160,6 +189,11 @@
 
   .flex-between {
     @apply flex items-center justify-between;
+  }
+
+  .bg-hero {
+    background-image: url('/images/hero-background.png');
+    @apply  bg-center bg-no-repeat;
   }
 }
 

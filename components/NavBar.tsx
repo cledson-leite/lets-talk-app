@@ -5,7 +5,7 @@ import { SignedIn, SignInButton, UserButton } from '@clerk/nextjs'
 
 export default function NavBar() {
   return (
-    <nav className='flex-between fixed z-50 w-full px-6 py-4 lg:px-10 bg-sidebar-primary'>
+    <nav className='flex-between fixed z-50 w-full px-6 py-4 lg:px-10 bg-gray-900'>
       <Link href={'/'} className='flex items-center gap-1'>
         <Image 
         className='max-sm:size-10'
